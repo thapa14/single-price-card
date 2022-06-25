@@ -1,0 +1,134 @@
+:root{
+    /* primary color  */
+    --cyan: hsl(179, 62%, 43%);
+--brightYellow: hsl(71, 73%, 54%);
+/* neutral colors  */
+
+--lightGray: hsl(204, 43%, 93%);
+--grayishBlue: hsla(216, 27%, 43%, 0.774);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    /* display: flex;
+    flex-direction: column;
+     */
+
+     display: grid;
+     grid-template-rows: 1fr;
+    width: 35rem;
+    box-shadow: 13px 23px 40px -14px #0000008c;
+}
+
+/* about div area  */
+
+.about__div{
+    background-color: var(--lightGray);
+
+}
+h1{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: 100;
+}
+.about__heading{
+    font-weight: 700;
+}
+
+.about__div h2{
+    font-size: 2rem;
+    color: var(--brightYellow);
+    margin-bottom: 2rem;
+}
+
+.about__para{
+    color: rgba(128, 128, 128, 0.699);
+    line-height: 2.6rem;
+}
+p{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.322);
+}
+
+/* price area  */
+
+.rate__div{
+    background-color: var(--cyan);
+}
+
+.rate{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.amount{
+    font-size: 3rem;
+    color: white;
+}
+
+.rate__time{
+    font-size: 1.5rem;
+}
+
+.para{
+    color: rgba(255, 255, 255, 0.589);
+    margin-bottom: 2.8rem;
+}
+
+button{
+    width: 100%;
+    color: white;
+    padding: 1.6rem;
+    background-color: var(--brightYellow);
+    border: 1px solid var(--brightYellow);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    box-shadow: 9px 9px 13px -7px #00000040;
+}
+
+/* why us coding area  */
+.whyUs__div{
+    background-color: var(--grayishBlue);
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* sharing classes */
+
+.about__heading{
+    color: var(--cyan);
+}
+
+.color{
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.padding{
+    padding: 3rem;
+}
